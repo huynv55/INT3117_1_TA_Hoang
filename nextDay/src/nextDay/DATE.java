@@ -12,9 +12,7 @@ public class DATE {
 			
 			if(y>=0){
 			if(m == 2){
-				int t = y;
-				while( t >= 4 ) t = t/4;
-				if( t == 1){
+				if( y % 4 == 0){
 					if(d >= 1 && d <= 29) day = d;
 					month = m;
 					year = y;
