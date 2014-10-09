@@ -5,7 +5,7 @@ import java.lang.*;
 
 public class triangle {
 	
-	public static int Istriangle(int a, int b, int c){
+	public String Istriangle(int a, int b, int c){
 		//result :
 		//kq = 0 : is not triangle - ko la tam giac
 		//kq = 1 : triangle - la tam giaac thuong
@@ -20,15 +20,15 @@ public class triangle {
 		boolean t4 = (a*a + b*b == c*c) || (a*a + c*c == b*b) || (b*b + c*c == a*a);
 		if(t1){
 			if(t2) {
-				if(t4) return 5;
-				if(t3) return 3;
-				return 2;
+				if(t4) return "right-isosceless triangle";
+				if(t3) return "equilateral";
+				return "isosceless";
 					}
-			if(t4) return 4;
-			return 1;
+			if(t4) return "right triangle";
+			return "triangle";
 		}
 		else{
-			return 0;
+			return "not a triangle";
 		}
 		
 		

@@ -5,7 +5,7 @@ import java.io.*;
 import java.lang.*;
 
 public class NextDay {
-	public static DATE nextday(DATE d){
+	public DATE nextday(DATE d){
 		DATE kq = new DATE();
 		int dd = d.getday();
 		int md = d.getmonth();
